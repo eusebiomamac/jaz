@@ -1,0 +1,56 @@
+
+
+<div class="flag col-md-12" style="margin-top:150px"></div>
+<script type="text/javascript">
+
+
+	var flag = [
+
+			[	
+				"Australia.png", 
+				"Canada.png", 
+				"Kuwait.png ",
+				"New_Zealand.png"
+			],
+			[	
+				"Greece.png", 
+				"Italy.svg", 
+				"Flag_of_Italy.svg",
+				"SaudiArabia.png"
+			],
+			[	
+				"Sout-africa.png", 
+				"UAE.png", 
+				"United_Kingdom.png", 
+				"usa.svg"
+			]
+	];
+
+
+
+	for(var i = 0; i < flag.length; i++){	
+
+		var dom = '';
+
+			dom+='	<div style="margin-top: 20px; margin-bottom: 20px;  display: block;" class="col-md-8 col-md-offset-2">';	
+			if(i == 2){
+				dom+='		<img src="flags/'+flag[2][0]+'" class="img-thumbnail col-md-3" alt="Cinque Terre" width="500" style="height: 147px">';
+			}else{
+				dom+='		<img src="flags/'+flag[i][0]+'" class="img-thumbnail col-md-3" alt="Cinque Terre" width="500" >';	
+			}			
+			dom+='		<img src="flags/'+flag[i][1]+'" class="img-thumbnail col-md-3" alt="Cinque Terre" width="500" >';
+			dom+='		<img src="flags/'+flag[i][2]+'" class="img-thumbnail col-md-3" alt="Cinque Terre" width="500" >';
+			dom+='		<img src="flags/'+flag[i][3]+'" class="img-thumbnail col-md-3" alt="Cinque Terre" width="500" >';
+			dom+= '	</div >';
+			$('.flag').append(dom);			
+	}
+
+</script>
+
+
+
+
+
+
+
+
